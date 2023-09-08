@@ -9,5 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var testClassBuilder = TestClassBuilder() //Created by the annotation processor
+
+        var secondTestClass = com.example.fromscratch.TestClassBuilder().setName("TestBuilder").setAge(20).build()
     }
 }
