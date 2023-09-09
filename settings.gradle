@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "From Scratch"
 include ':app'
-include ':annotationprocessor'
