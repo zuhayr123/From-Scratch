@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val result = TestClass(1,1).add()
-        Toast.makeText(this, "Result is $result", Toast.LENGTH_SHORT).show()
+        val testClass = TestClass(1,1).add()
+        Toast.makeText(this, "Result is $testClass", Toast.LENGTH_SHORT).show()
     }
 }
