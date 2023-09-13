@@ -13,9 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val testClass = TestClass(1,1, this).add()
-        Toast.makeText(this, "Result is $testClass", Toast.LENGTH_SHORT).show()
 
         val result = MyCalculator().addNumbers(1,1)
-        Toast.makeText(this, "Result is $testClass", Toast.LENGTH_SHORT).show()
     }
 }
