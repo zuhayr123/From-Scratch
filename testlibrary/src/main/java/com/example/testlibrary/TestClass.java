@@ -1,12 +1,17 @@
 package com.example.testlibrary;
 
+import android.content.Context;
+import android.widget.Toast;
+
 public class TestClass {
 
     private int a, b;
+    private Context context;
 
-    public TestClass(int a, int b){
+    public TestClass(int a, int b, Context context){
         this.a = a;
         this.b = b;
+        this.context = context;
     }
 
     public void setAB(int a, int b){
@@ -15,14 +20,20 @@ public class TestClass {
     }
 
     public int add(){
-        return a+b;
+        int c = a+b;
+        Toast.makeText(context, "Result is " + c, Toast.LENGTH_SHORT).show();
+        return c;
     }
 
     public int subtract(){
-        return a-b;
+        int c = a-b;
+        Toast.makeText(context, "Result is " + c, Toast.LENGTH_SHORT).show();
+        return c;
     }
 
     public int multiply(){
-        return a*b;
+        int c = a*b;
+        Toast.makeText(context, "Result is " + c, Toast.LENGTH_SHORT).show();
+        return c;
     }
 }
